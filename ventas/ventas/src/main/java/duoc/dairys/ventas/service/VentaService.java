@@ -45,4 +45,12 @@ public class VentaService {
 
         return ventaRepo.save(venta);
     }
+
+    //anular venta
+    public Venta anularVenta(Long id) {
+        Venta venta = obtenerVenta(id);
+
+        venta.setEstado("ANULADA");
+        return ventaRepo.save(venta);
+    }
 }

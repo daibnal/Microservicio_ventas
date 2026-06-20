@@ -14,7 +14,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class VentaDTO {
 
-    @NotNull
+    @NotNull(message = "El id del pedido es obligato")
     private Long idPedido;
 
 }
