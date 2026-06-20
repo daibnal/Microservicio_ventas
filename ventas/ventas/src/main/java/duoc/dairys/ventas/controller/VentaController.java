@@ -25,7 +25,7 @@ public class VentaController {
     //registrar venta
     @PostMapping
     public ResponseEntity<ResponseDTO> registrarVenta(@Valid @RequestBody VentaDTO dto){
-        return ResponseEntity.ok(new ResponseDTO("Venta registrada",ventaService.registrarVenta(dto)));
+        return ResponseEntity.status(201).body(new ResponseDTO("Venta registrada",ventaService.registrarVenta(dto)));
     }
 
     //listar ventas
