@@ -30,5 +30,8 @@ public class Venta {
     @Column(name = "fecha_venta")
     private LocalDateTime fechaVenta;
 
+    @Column(name = "estado_venta")
+    private String estado;
+
 
 }

@@ -19,7 +19,6 @@ public class VentaService {
 
     //Registrar venta
     public Venta registrarVenta(VentaDTO dto){
-
         Venta venta = new Venta();
 
         venta.setIdPedido(dto.getIdPedido());
@@ -34,7 +33,6 @@ public class VentaService {
         return ventaRepo.findAll();
     }
 
-
     //obtener venta
     public Venta obtenerVenta(Long id){
         return ventaRepo.findById(id).orElseThrow(() -> new RuntimeException("Venta no encontrada"));
@@ -42,9 +40,7 @@ public class VentaService {
 
     //cambiar estado de la venta
     public Venta cambiarEstado(Long id, String estado){
-
         Venta venta = obtenerVenta(id);
-
         venta.setEstado(estado);
 
         return ventaRepo.save(venta);
