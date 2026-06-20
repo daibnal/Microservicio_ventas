@@ -1,0 +1,13 @@
+package duoc.dairys.ventas.DTO;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class DocumentoVentaDTO {
+    private Long idVenta;
+    private String tipoDocumento;
+}
