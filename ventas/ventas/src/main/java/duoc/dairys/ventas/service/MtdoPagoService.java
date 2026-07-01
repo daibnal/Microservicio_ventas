@@ -3,10 +3,12 @@ package duoc.dairys.ventas.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import duoc.dairys.ventas.model.MetodoPago;
 import duoc.dairys.ventas.repository.MtdoPagoRepo;
 
+@Service
 public class MtdoPagoService {
 
     @Autowired
